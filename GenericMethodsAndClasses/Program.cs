@@ -21,6 +21,15 @@
             Elems<int> elems2 = new Elems<int>();
             elems2.Add(5, 14, 13);
             elems2.Show();
+            
+            int a = 4, b = 9;
+            GenericMethods.Swap<int>(ref a, ref b);
+            Console.WriteLine(a + " " + b);
+
+            string x = "Hello";
+            string y = "World";
+            GenericMethods.Swap<string>(ref x, ref y);
+            Console.WriteLine(x + " " + y);
         }
     }
 }
